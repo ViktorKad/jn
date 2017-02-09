@@ -1,0 +1,16 @@
+{
+    "version": "0.8.1",
+    "name": "jn",
+    "main": "./bin/jn",
+    "bin": {
+        "jn": "./bin/jn"
+      },
+    "license": "MIT",
+    "author": {
+        "name": "ViktorKad",
+        "url": ""
+    },
+    "dependencies": {
+      "stylus": "*"
+    }
+}

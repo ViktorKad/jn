@@ -1,0 +1,16 @@
+#!/usr/bin/env node
+(function() {
+    var args = process.argv.slice(2).map(item => item.substring(2)),
+        actions = {
+            makecode: require('../make/make.jn.js'),
+            makestyl: require('../make/make.styl.js')
+        };
+
+    //TODO: Сделать нормально и под разное количество аргументов
+    for (var i in args) {
+        if (typeof actions[args[i]] === 'function') {
+            actions[args[i]]();
+            return;
+        }
+    }
+})();
